@@ -1,0 +1,62 @@
+/* mobile */
+html {
+    font-size: 14px;
+}
+/* tablet */
+@media only screen and (min-width: 480px) {
+    html {
+        font-size: 16px;
+    }
+}
+/* desktop */
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+}
+/* extra large */
+@media only screen and (min-width: 1024px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 20%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.project-description {
+    padding-left: 10%;
+    font-family: 'Lato';
+    font-size: 18pt;
+}
+
+.project-image {
+    width: auto;
+    max-width: 20rem;
+    height: auto;
+    max-height: 20rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 15px;
+    transition: .2s;
+    box-shadow:  0 10px 20px 8px rgba(103, 228, 233, 0.336);
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+}
+
+.project-image:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* this is to stop the link transition from the header affecting these links */
+a::after {
+    border-top: none;
+}

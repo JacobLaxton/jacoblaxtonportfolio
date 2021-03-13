@@ -1,0 +1,71 @@
+/* mobile */
+html {
+    font-size: 14px;
+}
+/* tablet */
+@media only screen and (min-width: 480px) {
+    html {
+        font-size: 16px;
+    }
+}
+/* desktop */
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+}
+/* extra large */
+@media only screen and (min-width: 1024px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+/* offset-x | offset-y | blur-radius | spread-radius | color */
+
+@font-face {
+    font-family: 'myFont';
+    src: url('../../media/franklin.ttf');
+}
+
+.splash {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20%;
+    align-items: left;
+    justify-content: center;
+
+    height: 100vh;
+    background-image: url(../../media/splashwallpaper.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.opener {
+    display: flex;
+    font-family: 'myFont';
+    font-size: 30pt;
+    padding-bottom: 1rem;
+}
+
+.opener2 {
+    display: flex;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+
+.project-list {
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+    background-color: rgb(235, 254, 255);
+    box-shadow: inset 0 20px 9px -7px rgba(185, 253, 255, 0.295);
+
+    
+}
